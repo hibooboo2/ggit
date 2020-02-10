@@ -198,7 +198,7 @@ var remoteTypes = map[string]string{
 }
 
 var remoteTypeTicketRegexes = map[string]*regexp.Regexp{
-	Acronis: regexp.MustCompile(`(ABR-\d{6})`),
+	Acronis: regexp.MustCompile(`((ABR|AUK|ADP)-\d*)`),
 }
 
 var remoteTypeTicketFormatString = map[string]string{
